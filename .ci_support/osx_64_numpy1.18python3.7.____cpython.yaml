@@ -35,3 +35,11 @@ target_platform:
 zip_keys:
 - - python
   - numpy
+
+CONDA_BUILD_SYSROOT:
+- /Users/osmart/opt/MacOSX10.9.sdk
+
+
+CONDA_BUILD_SYSROOT:
+- /Users/osmart/opt/MacOSX10.9.sdk
+

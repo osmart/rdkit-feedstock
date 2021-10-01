@@ -1,6 +1,6 @@
 {% set name = "rdkit" %}
 {% set version = "2021.03.5" %}
-{% set filename = "Release_%s_nocairo.tar.gz" % version.replace(".", "_") %}
+{% set filename = "Release_%s.tar.gz" % version.replace(".", "_") %}
 
 package:
   name: {{ name|lower }}
