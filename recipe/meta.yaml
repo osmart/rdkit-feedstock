@@ -1,6 +1,6 @@
 {% set name = "rdkit" %}
 {% set version = "2021.03.5" %}
-{% set filename = "Release_%s.tar.gz" % version.replace(".", "_") %}
+{% set filename = "Release_%s_nocairo.tar.gz" % version.replace(".", "_") %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - pkg-config
   host:
     - boost
-    - cairo
+      #- cairo
     - eigen
     - freetype
     - python
@@ -35,12 +35,12 @@ requirements:
     - pandas
   run:
     - boost
-    - cairo
+      #- cairo
     - python
     - pillow
     - pandas
     - {{ pin_compatible('numpy') }}
-    - pycairo
+      #- pycairo
     - matplotlib-base
     - sqlalchemy
     - reportlab
